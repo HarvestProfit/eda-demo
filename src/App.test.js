@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as Router } from "react-router-dom";import { shallow } from 'enzyme';
+import { HashRouter as Router } from 'react-router-dom';
+import { shallow } from 'enzyme';
 import App from './App';
 
 describe('<App />', () => {
