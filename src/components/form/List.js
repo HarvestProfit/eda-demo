@@ -1,31 +1,26 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Button, Col, Form, FormGroup, Label } from 'reactstrap';
+import { Col, Media } from 'reactstrap';
 
-import Input from '../shared/Input';
+import ListItem from './list/ListItem';
 
-const Person = (props) => (
+const List = (props) => (
   <Col xs="12" md="5">
-    <h1 className="mb-4">Our Awesome Form</h1>
-    <Form>
-      <FormGroup>
-        <Label for="name">Name</Label>
-        <Input type="text" name="name" id="name" placeholder="Your Name" value={props.name} onChange={props.changeName} />
-      </FormGroup>
-      <FormGroup>
-        <Label for="job">Job</Label>
-        <Input type="text" name="job" id="job" placeholder="Your Job" value={props.job} onChange={props.changeJob} />
-      </FormGroup>
-      <Button block type="submit" color="primary" className="mt-4">Submit</Button>
-    </Form>
+    <Media list>
+      {props.users.map((user, index) => (
+        <ListItem key={`${user.name}-${index}`} user={user} index={index} />
+      ))}
+    </Media>
   </Col>
 );
 
-Person.propTypes = {
-  name: PropTypes.string.isRequired,
-  job: PropTypes.string.isRequired,
-  changeName: PropTypes.func.isRequired,
-  changeJob: PropTypes.func.isRequired,
+List.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      github: PropTypes.string.isRequired,
+    }).isRequired,
+  ).isRequired,
 }
 
-export default Person;
+export default List;
