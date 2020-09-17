@@ -10,7 +10,15 @@ const Footer = (props) => {
     <footer>
       <Navbar color="light" light>
         <span>
-          Made with <i className="fas fa-heart" /> by Harvest Profit
+          Made with
+          {' '}
+          <a className="text-dark" href="https://www.youtube.com/watch?v=Xe1TZaElTAs">
+            <i className="fas fa-heart" />
+          </a>
+          {' '}
+          by
+          {' '}
+          <a className="text-dark" href="https://www.harvestprofit.com">Harvest Profit</a>
         </span>
         <NavbarBrand href="https://github.com/HarvestProfit/eda-demo">
           Source Code

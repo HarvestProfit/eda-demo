@@ -20,7 +20,7 @@ const Navigation = (props) => {
   return (
     <header>
       <Navbar color="dark" dark expand="md">
-        <NavbarBrand href="https://www.harvestprofit.com">
+        <NavbarBrand tag={NavLink} to="/">
           <img className="img-fluid" alt="Harvest Profit" src={whiteLogo} height="30" width="30" />
         </NavbarBrand>
         <NavbarToggler onClick={toggle} />
