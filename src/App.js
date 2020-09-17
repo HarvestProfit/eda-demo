@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -11,7 +11,7 @@ import Form from './components/Form';
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter basename="/eda-demo">
         <div className="d-flex flex-column justify-content-between" style={{ minHeight: '100vh' }}>
           <Navigation />
           <Switch>
@@ -27,7 +27,7 @@ class App extends Component {
           </Switch>
           <Footer />
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

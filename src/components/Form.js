@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { Col, Container, Form as ReactstrapForm, FormGroup, Label, Row } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
-import Input from './shared/Input';
+import Person from './form/Person';
 
 class Form extends Component {
   constructor(props) {
@@ -12,31 +12,27 @@ class Form extends Component {
     }
   }
 
-  changeName = (name) => {
+  changeName = (event) => {
+    const name = event.target.value;
     this.setState({ name });
   }
 
-  changeJob = (job) => {
+  changeJob = (event) => {
+    const job = event.target.value;
     this.setState({ job });
   }
 
   render() {
+    const { name, job } = this.state;
     return (
       <Container>
         <Row>
-          <Col xs="12">
-            <h1 className="mb-5">Our Awesome Form</h1>
-            <ReactstrapForm>
-              <FormGroup>
-                <Label for="name">Name</Label>
-                <Input type="text" name="name" id="name" placeholder="Your Name" value={this.state.name} onChange={this.changeName} />
-              </FormGroup>
-              <FormGroup>
-                <Label for="job">Job</Label>
-                <Input type="text" name="job" id="job" placeholder="Your Job" value={this.state.job} onChange={this.changeJob} />
-              </FormGroup>
-            </ReactstrapForm>
-          </Col>
+          <Person
+            name={name}
+            job={job}
+            changeName={this.changeName}
+            changeJob={this.changeJob}
+          />
         </Row>
       </Container>
     );
