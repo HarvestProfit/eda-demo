@@ -1,7 +1,13 @@
+import axios from 'axios';
+import mockAdapter from 'axios-mock-adapter';
+
 import React from 'react';
 import { Container } from 'reactstrap';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Form from './Form';
+import ListItem from './form/list/ListItem';
+
+const mock = new mockAdapter(axios);
 
 describe('<Form />', () => {
   it('should render a <Container />', () => {
@@ -19,7 +25,11 @@ describe('<Form />', () => {
   });
 
   it('should be able to add state', () => {
-    const wrapper = shallow(
+    mock.onGet(/github/).reply(200, {
+      avatar_url: 'https://avatars3.githubusercontent.com/u/12515498?v=4',
+    });
+
+    const wrapper = mount(
       <Form />
     );
 
@@ -31,5 +41,7 @@ describe('<Form />', () => {
 
     expect(wrapper.state().users.length).toEqual(3);
     expect(state).not.toEqual(newState);
+    wrapper.update();
+    expect(wrapper.find(ListItem).length).toEqual(3);
   });
 });
