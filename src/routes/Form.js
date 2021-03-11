@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row } from 'reactstrap';
 
-import Person from './form/Person';
-import List from './form/List';
+import Person from '../components/form/Person';
+import List from '../components/form/List';
 
 class Form extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Form extends Component {
       name: '',
       github: '',
       users: [
-        { name: 'Jaryd', github: 'jarydkrish' },
+        { name: 'Blaine', github: 'booherbg' },
         { name: 'Nick', github: 'nhorob67' },
       ]
     }

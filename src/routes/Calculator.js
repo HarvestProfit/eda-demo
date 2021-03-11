@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Form as ReactstrapForm, FormGroup, Label, Row } from 'reactstrap';
 
-import Input from './shared/Input';
+import Input from '../components/shared/Input';
 
 class Calculator extends Component {
   constructor(props) {

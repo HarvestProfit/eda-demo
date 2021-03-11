@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'reactstrap';
 import { shallow } from 'enzyme';
 import Home from './Home';
 
