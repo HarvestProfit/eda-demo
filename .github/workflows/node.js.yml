@@ -29,9 +29,10 @@ jobs:
         path: |
           ${{ steps.yarn-cache.outputs.dir }}
           node_modules
-        key: ${{ runner.os }}-node-${{ matrix.node_version }}-yarn-${{ hashFiles('**/yarn.lock') }}
+        key: ${{ runner.os }}-node-${{ hashFiles('**/.node-version') }}-yarn-${{ hashFiles('**/yarn.lock') }}
         restore-keys: |
-          ${{ runner.os }}-node-${{ matrix.node_version }}
+          ${{ runner.os }}-node
+          ${{ runner.os }}-node-${{ hashFiles('**/.node-version') }}
 
     - name: Install dependencies
       run: yarn install --pure-lockfile
