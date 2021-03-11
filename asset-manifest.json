@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/eda-demo/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/eda-demo/static/js/main.7b5d2987.chunk.js",
-    "main.js.map": "/eda-demo/static/js/main.7b5d2987.chunk.js.map",
+    "main.js": "/eda-demo/static/js/main.da2e8a65.chunk.js",
+    "main.js.map": "/eda-demo/static/js/main.da2e8a65.chunk.js.map",
     "runtime-main.js": "/eda-demo/static/js/runtime-main.ea4c7536.js",
     "runtime-main.js.map": "/eda-demo/static/js/runtime-main.ea4c7536.js.map",
     "static/css/2.86846cc5.chunk.css": "/eda-demo/static/css/2.86846cc5.chunk.css",
-    "static/js/2.5bd17ddf.chunk.js": "/eda-demo/static/js/2.5bd17ddf.chunk.js",
-    "static/js/2.5bd17ddf.chunk.js.map": "/eda-demo/static/js/2.5bd17ddf.chunk.js.map",
+    "static/js/2.2860b58f.chunk.js": "/eda-demo/static/js/2.2860b58f.chunk.js",
+    "static/js/2.2860b58f.chunk.js.map": "/eda-demo/static/js/2.2860b58f.chunk.js.map",
     "index.html": "/eda-demo/index.html",
     "static/css/2.86846cc5.chunk.css.map": "/eda-demo/static/css/2.86846cc5.chunk.css.map",
     "static/css/main.6dea0f05.chunk.css.map": "/eda-demo/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.5bd17ddf.chunk.js.LICENSE.txt": "/eda-demo/static/js/2.5bd17ddf.chunk.js.LICENSE.txt"
+    "static/js/2.2860b58f.chunk.js.LICENSE.txt": "/eda-demo/static/js/2.2860b58f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ea4c7536.js",
     "static/css/2.86846cc5.chunk.css",
-    "static/js/2.5bd17ddf.chunk.js",
+    "static/js/2.2860b58f.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.7b5d2987.chunk.js"
+    "static/js/main.da2e8a65.chunk.js"
   ]
 }
