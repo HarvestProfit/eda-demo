@@ -4,9 +4,9 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
 
-import Calculator from './components/Calculator';
-import Home from './components/Home';
-import Form from './components/Form';
+import Calculator from './routes/Calculator';
+import Home from './routes/Home';
+import Form from './routes/Form';
 
 class App extends Component {
   render() {
