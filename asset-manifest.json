@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/eda-demo/static/js/main.aa4096ee.chunk.js",
-    "main.js.map": "/eda-demo/static/js/main.aa4096ee.chunk.js.map",
+    "main.js": "/eda-demo/static/js/main.1f575b2b.chunk.js",
+    "main.js.map": "/eda-demo/static/js/main.1f575b2b.chunk.js.map",
     "runtime-main.js": "/eda-demo/static/js/runtime-main.ea4c7536.js",
     "runtime-main.js.map": "/eda-demo/static/js/runtime-main.ea4c7536.js.map",
     "static/css/2.86846cc5.chunk.css": "/eda-demo/static/css/2.86846cc5.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.ea4c7536.js",
     "static/css/2.86846cc5.chunk.css",
     "static/js/2.e473a79b.chunk.js",
-    "static/js/main.aa4096ee.chunk.js"
+    "static/js/main.1f575b2b.chunk.js"
   ]
 }
