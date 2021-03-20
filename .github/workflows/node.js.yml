@@ -49,10 +49,12 @@ jobs:
     - name: Deploy
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/HarvestProfit/eda-demo.git
+        git config user.email "nick@harvestprofit.com"
+        git config user.name "Nick Horob"
         yarn build
         touch build/.keep
         npx gh-pages clean -d build
-        npx gh-pages -d build --user "Nick Horob <nick@harvestprofit.com>"
+        npx gh-pages -d build
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: github.ref == 'refs/heads/master' && github.event_name == 'push'
