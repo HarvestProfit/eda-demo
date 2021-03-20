@@ -6,18 +6,19 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [15.x]
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Set up Node.js ${{ matrix.node-version }}
+    - name: Read ".node-version" file
+      id: node-version
+      run: echo "::set-output name=version::$(cat .node-version)"
+
+    - name: Set up Node.js ${{ steps.node-version.outputs.version }}
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: ${{ steps.node-version.outputs.version }}
+
 
     - name: Find yarn cache location
       id: yarn-cache
