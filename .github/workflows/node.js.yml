@@ -49,6 +49,8 @@ jobs:
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/HarvestProfit/eda-demo.git
         yarn build
+        touch build/.keep
+        npx gh-pages clean -d build
         npx gh-pages -d build --user "Nick Horob <nick@harvestprofit.com>"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
