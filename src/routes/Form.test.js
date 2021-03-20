@@ -5,7 +5,7 @@ import React from 'react';
 import { Container } from 'reactstrap';
 import { shallow, mount } from 'enzyme';
 import Form from './Form';
-import ListItem from './form/list/ListItem';
+import ListItem from '../components/form/list/ListItem';
 
 const mock = new mockAdapter(axios);
 
