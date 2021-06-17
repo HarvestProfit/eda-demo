@@ -3,22 +3,6 @@
   "homepage": "https://harvestprofit.github.io/eda-demo",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.5.0",
-    "jquery": "^3.5.1",
-    "lodash": "^4.17.19",
-    "popper.js": "^1.16.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-redux": "^7.2.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "^4.0.3",
-    "reactstrap": "^8.5.1",
-    "redux": "^4.0.5",
-    "sass": "^1.35.1"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,6 +24,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.19",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^4.0.3",
+    "reactstrap": "^8.5.1",
+    "redux": "^4.0.5",
+    "sass": "^1.35.1"
   },
   "devDependencies": {
     "@testing-library/dom": "^7.24.2",
